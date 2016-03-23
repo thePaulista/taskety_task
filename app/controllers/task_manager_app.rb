@@ -1,8 +1,4 @@
 class TaskManagerApp < Sinatra::Base
-  set :root, File.expand_path("..", __dir__) #specifying that our root is just app
-  set :method_override, true
-
-  require 'models/task_manager'
 
   get '/' do
     erb :dashboard

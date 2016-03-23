@@ -3,9 +3,6 @@ tasks:
 - id: 3
   title: yo
   description: "yoyo\r\n"
-- id: 4
-  title: yo
-  description: "yoyo\r\n"
 - id: 5
   title: task
   description: "manager\r\n"
