@@ -47,4 +47,13 @@ class TaskManager
       database["tasks"].delete_if {|task| task["id"] == id.to_i}
     end
   end
+
+
+ def delete_all
+    database.transaction do
+      database['tasks'] = []
+      database['total'] = 0
+    end
+  end
+
 end

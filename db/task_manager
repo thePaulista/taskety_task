@@ -6,7 +6,4 @@ tasks:
 - id: 5
   title: task
   description: "manager\r\n"
-- id: 6
-  title: adfasdfdas
-  description: dfasdfasdfadsf
 total: 6
