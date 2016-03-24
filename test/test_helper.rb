@@ -4,6 +4,11 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'minitest/autorun'
 require 'minitest/pride'
 require 'tilt/erb'
+require 'capybara/dsl'
+require 'tilt/erb'
+
+
+Capybara.app = TaskManagerApp #otherwise, rack doesn't know which visit '/' to visit
 
 module TestHelpers
   def teardown
